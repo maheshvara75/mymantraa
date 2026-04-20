@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, ChevronDown, Phone, Mail, MessageCircle } from 'lucide-react';
-import { NAV_ITEMS, NavItem } from '../constants';
+import { NAV_ITEMS, NavItem } from '../constant';
 import { cn } from '../lib/utils';
 
 export default function Navbar() {
