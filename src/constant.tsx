@@ -25,21 +25,23 @@ export const NAV_ITEMS: NavItem[] = [
         label: 'Business Setup Services',
         href: '/services/business-setup',
         children: [
-          { label: 'Mainland Company Formation', href: '/services/business-setup/mainland' },
           { label: 'Freezone Company Formation', href: '/services/business-setup/freezone' },
           { label: 'Offshore Company Formation', href: '/services/business-setup/offshore' },
-          { label: 'Professional/Trading License', href: '/services/business-setup/license' },
+          { label: 'Mainland Company Formation', href: '/services/business-setup/mainland' },
         ],
       },
       {
         label: 'Bookkeeping & Audit',
         href: '/services/bookkeeping',
         children: [
+          { label: 'Basic Bookkeeping and MIS', href: '/services/bookkeeping/mis' },
+          { label: 'Outsourced Accounting', href: '/services/bookkeeping/outsourced' },
           { label: 'Statutory Audit', href: '/services/bookkeeping/statutory' },
           { label: 'Internal Audit', href: '/services/bookkeeping/internal' },
-          { label: 'Bookkeeping & Accounting', href: '/services/bookkeeping/accounting' },
-          { label: 'Backlog Accounting', href: '/services/bookkeeping/backlog' },
-          { label: 'Inventory Audit', href: '/services/bookkeeping/inventory' },
+          { label: 'Stock Audit', href: '/services/bookkeeping/stock' },
+          { label: 'Due Diligence Audit', href: '/services/bookkeeping/due-diligence' },
+          { label: 'Temporary and Long-Term Accounting Staffing Solutions', href: '/services/bookkeeping/staffing' },
+          { label: 'Updating Backlog Accounting', href: '/services/bookkeeping/backlog' },
         ],
       },
       {
@@ -47,9 +49,11 @@ export const NAV_ITEMS: NavItem[] = [
         href: '/services/vat',
         children: [
           { label: 'VAT Registration', href: '/services/vat/registration' },
-          { label: 'VAT Return Filing', href: '/services/vat/return' },
-          { label: 'VAT Compliance', href: '/services/vat/compliance' },
-          { label: 'VAT Audit & Health Check', href: '/services/vat/audit' },
+          { label: 'VAT Deregistration', href: '/services/vat/deregistration' },
+          { label: 'VAT Accounting', href: '/services/vat/accounting' },
+          { label: 'VAT Return Filling', href: '/services/vat/return' },
+          { label: 'VAT Audit', href: '/services/vat/audit' },
+          { label: 'VAT Health Check', href: '/services/vat/health-check' },
         ],
       },
       {
@@ -57,8 +61,9 @@ export const NAV_ITEMS: NavItem[] = [
         href: '/services/corporate-tax',
         children: [
           { label: 'Corporate Tax Registration', href: '/services/corporate-tax/registration' },
-          { label: 'Tax Impact Assessment', href: '/services/corporate-tax/impact' },
-          { label: 'Tax Planning & Compliance', href: '/services/corporate-tax/planning' },
+          { label: 'Corporate Tax Return Filling', href: '/services/corporate-tax/return' },
+          { label: 'Corporate Tax Impact Assessment', href: '/services/corporate-tax/impact' },
+          { label: 'TAX Planning', href: '/services/corporate-tax/planning' },
         ],
       },
       {
@@ -67,25 +72,28 @@ export const NAV_ITEMS: NavItem[] = [
         children: [
           { label: 'ESR Services', href: '/services/compliance/esr' },
           { label: 'UBO Services', href: '/services/compliance/ubo' },
-          { label: 'AML Compliance', href: '/services/compliance/aml' },
+          { label: 'AML Compliance Services', href: '/services/compliance/aml' },
+          { label: 'ERP Implementation/Automation', href: '/services/compliance/erp' },
         ],
       },
       {
         label: 'Advisory Services',
         href: '/services/advisory',
         children: [
-          { label: 'Strategic Advisory', href: '/services/advisory/strategic' },
           { label: 'Business Feasibility Study', href: '/services/advisory/feasibility' },
+          { label: 'Pitch Deck Preparation', href: '/services/advisory/pitch-deck' },
           { label: 'Business Valuation', href: '/services/advisory/valuation' },
+          { label: 'Due Diligence Report', href: '/services/advisory/due-diligence' },
+          { label: 'Strategic Advisory for Growth and Expansion', href: '/services/advisory/strategic' },
         ],
       },
       {
         label: 'CFO Services',
         href: '/services/cfo',
         children: [
-          { label: 'Outsourced CFO Services', href: '/services/cfo/outsourced' },
-          { label: 'Budgeting & Forecasting', href: '/services/cfo/budgeting' },
-          { label: 'Financial Reporting', href: '/services/cfo/reporting' },
+          { label: 'Outsource CFO Services', href: '/services/cfo/outsource' },
+          { label: 'Budgeting and Forecasting', href: '/services/cfo/budgeting' },
+          { label: 'Cost Control and Profit Maximization Strategy', href: '/services/cfo/strategy' },
         ],
       },
       {
@@ -103,7 +111,7 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Resources',
     href: '/resources',
     children: [
-      { label: 'Blogs', href: '/resources/blogs' },
+      { label: 'Blog', href: '/resources/blog' },
       { label: "FAQ's", href: '/resources/faqs' },
       { label: 'Service Insights', href: '/resources/insights' },
     ],

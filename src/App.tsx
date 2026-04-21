@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ServicesGrid from './components/ServicesGrid';
 import ContactSection from './components/ContactSection';
+import MapSection from './components/MapSection';
 import Footer from './components/Footer';
 import { WhatsAppButton, ScrollToTop } from './components/FloatingActions';
 import { motion } from 'motion/react';
@@ -12,6 +13,50 @@ import WhyUsPage from './pages/WhyUsPage';
 import CSRPage from './pages/CSRPage';
 import JoinUsPage from './pages/JoinUsPage';
 import CompanyProfilePage from './pages/CompanyProfilePage';
+import FAQPage from './pages/FAQPage';
+import BusinessSetupPage from './pages/BusinessSetupPage';
+import FreezoneFormationPage from './pages/FreezoneFormationPage';
+import OffshoreFormationPage from './pages/OffshoreFormationPage';
+import MainlandFormationPage from './pages/MainlandFormationPage';
+import BookkeepingAuditPage from './pages/BookkeepingAuditPage';
+import BasicBookkeepingPage from './pages/BasicBookkeepingPage';
+import OutsourcedAccountingPage from './pages/OutsourcedAccountingPage';
+import StatutoryAuditPage from './pages/StatutoryAuditPage';
+import InternalAuditPage from './pages/InternalAuditPage';
+import StockAuditPage from './pages/StockAuditPage';
+import DueDiligenceAuditPage from './pages/DueDiligenceAuditPage';
+import StaffingSolutionsPage from './pages/StaffingSolutionsPage';
+import BacklogAccountingPage from './pages/BacklogAccountingPage';
+import VATAdvisoryPage from './pages/VATAdvisoryPage';
+import VATRegistrationPage from './pages/VATRegistrationPage';
+import VATDeregistrationPage from './pages/VATDeregistrationPage';
+import VATAccountingPage from './pages/VATAccountingPage';
+import VATReturnFilingPage from './pages/VATReturnFilingPage';
+import VATAuditPage from './pages/VATAuditPage';
+import VATHealthCheckPage from './pages/VATHealthCheckPage';
+import CorporateTaxPage from './pages/CorporateTaxPage';
+import CorporateTaxRegistrationPage from './pages/CorporateTaxRegistrationPage';
+import TaxReturnFilingPage from './pages/TaxReturnFilingPage';
+import TaxImpactAssessmentPage from './pages/TaxImpactAssessmentPage';
+import TaxPlanningPage from './pages/TaxPlanningPage';
+import CompliancePage from './pages/CompliancePage';
+import ESRServicesPage from './pages/ESRServicesPage';
+import UBOServicesPage from './pages/UBOServicesPage';
+import AMLCompliancePage from './pages/AMLCompliancePage';
+import ERPImplementationPage from './pages/ERPImplementationPage';
+import AdvisoryServicesPage from './pages/AdvisoryServicesPage';
+import FeasibilityStudyPage from './pages/FeasibilityStudyPage';
+import PitchDeckPage from './pages/PitchDeckPage';
+import BusinessValuationPage from './pages/BusinessValuationPage';
+import DueDiligenceReportPage from './pages/DueDiligenceReportPage';
+import StrategicPlanningPage from './pages/StrategicPlanningPage';
+import CFOServicesPage from './pages/CFOServicesPage';
+import CostControlPage from './pages/CostControlPage';
+import ResidencyPage from './pages/ResidencyPage';
+import GoldenVisaPage from './pages/GoldenVisaPage';
+import EquivalencyCertificatePage from './pages/EquivalencyCertificatePage';
+import TravelConciergePage from './pages/TravelConciergePage';
+import BlogPage from './pages/BlogPage';
 import PageLayout from './components/PageLayout';
 
 function ContactPage() {
@@ -146,64 +191,75 @@ export default function App() {
             <Route path="/company/csr" element={<CSRPage />} />
             <Route path="/company/join-us" element={<JoinUsPage />} />
             <Route path="/company/profile" element={<CompanyProfilePage />} />
+            <Route path="/resources/blog" element={<BlogPage />} />
+            <Route path="/resources/faqs" element={<FAQPage />} />
             <Route path="/contact" element={<ContactPage />} />
             
             {/* Business Setup */}
-            <Route path="/services/business-setup" element={<ServicePage title="Business Setup Services" description="Mainland, Freezone, and Offshore company formation." />} />
-            <Route path="/services/business-setup/mainland" element={<ServicePage title="Mainland Company Formation" description="Expand your reach with UAE mainland setup." />} />
-            <Route path="/services/business-setup/freezone" element={<ServicePage title="Freezone Company Formation" description="Setup your business in UAE's premier freezones." />} />
-            <Route path="/services/business-setup/offshore" element={<ServicePage title="Offshore Company Formation" description="Secure and efficient offshore solutions." />} />
-            <Route path="/services/business-setup/license" element={<ServicePage title="Professional/Trading License" description="Expert assistance for all types of business licenses." />} />
+            <Route path="/services/business-setup" element={<BusinessSetupPage />} />
+            <Route path="/services/business-setup/freezone" element={<FreezoneFormationPage />} />
+            <Route path="/services/business-setup/offshore" element={<OffshoreFormationPage />} />
+            <Route path="/services/business-setup/mainland" element={<MainlandFormationPage />} />
 
             {/* Bookkeeping & Audit */}
-            <Route path="/services/bookkeeping" element={<ServicePage title="Bookkeeping & Audit" description="Professional financial management and audit services." />} />
-            <Route path="/services/bookkeeping/statutory" element={<ServicePage title="Statutory Audit" description="Compliance with statutory audit requirements." />} />
-            <Route path="/services/bookkeeping/internal" element={<ServicePage title="Internal Audit" description="Internal control and risk assessment." />} />
-            <Route path="/services/bookkeeping/accounting" element={<ServicePage title="Bookkeeping & Accounting" description="Accurate records for business clarity." />} />
-            <Route path="/services/bookkeeping/backlog" element={<ServicePage title="Backlog Accounting" description="Bringing your old accounts up to date." />} />
-            <Route path="/services/bookkeeping/inventory" element={<ServicePage title="Inventory Audit" description="Precise stock valuation and auditing." />} />
+            <Route path="/services/bookkeeping" element={<BookkeepingAuditPage />} />
+            <Route path="/services/bookkeeping/mis" element={<BasicBookkeepingPage />} />
+            <Route path="/services/bookkeeping/outsourced" element={<OutsourcedAccountingPage />} />
+            <Route path="/services/bookkeeping/statutory" element={<StatutoryAuditPage />} />
+            <Route path="/services/bookkeeping/internal" element={<InternalAuditPage />} />
+            <Route path="/services/bookkeeping/stock" element={<StockAuditPage />} />
+            <Route path="/services/bookkeeping/due-diligence" element={<DueDiligenceAuditPage />} />
+            <Route path="/services/bookkeeping/staffing" element={<StaffingSolutionsPage />} />
+            <Route path="/services/bookkeeping/backlog" element={<BacklogAccountingPage />} />
             
             {/* VAT */}
-            <Route path="/services/vat" element={<ServicePage title="VAT Advisory" description="Comprehensive VAT compliance and advisory." />} />
-            <Route path="/services/vat/registration" element={<ServicePage title="VAT Registration" description="Get registered for VAT properly." />} />
-            <Route path="/services/vat/return" element={<ServicePage title="VAT Return Filing" description="Expert filing of your VAT returns." />} />
-            <Route path="/services/vat/compliance" element={<ServicePage title="VAT Compliance" description="Ensuring your business follows VAT laws." />} />
-            <Route path="/services/vat/audit" element={<ServicePage title="VAT Audit & Health Check" description="In-depth audit of your VAT records." />} />
+            <Route path="/services/vat" element={<VATAdvisoryPage />} />
+            <Route path="/services/vat/registration" element={<VATRegistrationPage />} />
+            <Route path="/services/vat/deregistration" element={<VATDeregistrationPage />} />
+            <Route path="/services/vat/accounting" element={<VATAccountingPage />} />
+            <Route path="/services/vat/return" element={<VATReturnFilingPage />} />
+            <Route path="/services/vat/audit" element={<VATAuditPage />} />
+            <Route path="/services/vat/health-check" element={<VATHealthCheckPage />} />
 
             {/* Corporate Tax */}
-            <Route path="/services/corporate-tax" element={<ServicePage title="Corporate Tax" description="Navigate the new UAE corporate tax landscape." />} />
-            <Route path="/services/corporate-tax/registration" element={<ServicePage title="Corporate Tax Registration" description="Register for UAE Corporate Tax." />} />
-            <Route path="/services/corporate-tax/impact" element={<ServicePage title="Tax Impact Assessment" description="Assess how corporate tax affects you." />} />
-            <Route path="/services/corporate-tax/planning" element={<ServicePage title="Tax Planning & Compliance" description="Efficient tax strategies for your firm." />} />
+            <Route path="/services/corporate-tax" element={<CorporateTaxPage />} />
+            <Route path="/services/corporate-tax/registration" element={<CorporateTaxRegistrationPage />} />
+            <Route path="/services/corporate-tax/return" element={<TaxReturnFilingPage />} />
+            <Route path="/services/corporate-tax/impact" element={<TaxImpactAssessmentPage />} />
+            <Route path="/services/corporate-tax/planning" element={<TaxPlanningPage />} />
 
             {/* Compliance */}
-            <Route path="/services/compliance" element={<ServicePage title="Compliance Services" description="Stay compliant with UAE regulations." />} />
-            <Route path="/services/compliance/esr" element={<ServicePage title="ESR Services" description="Economic Substance Regulations compliance." />} />
-            <Route path="/services/compliance/ubo" element={<ServicePage title="UBO Services" description="Ultimate Beneficial Owner registration." />} />
-            <Route path="/services/compliance/aml" element={<ServicePage title="AML Compliance" description="Anti-Money Laundering compliance." />} />
+            <Route path="/services/compliance" element={<CompliancePage />} />
+            <Route path="/services/compliance/esr" element={<ESRServicesPage />} />
+            <Route path="/services/compliance/ubo" element={<UBOServicesPage />} />
+            <Route path="/services/compliance/aml" element={<AMLCompliancePage />} />
+            <Route path="/services/compliance/erp" element={<ERPImplementationPage />} />
 
             {/* Advisory */}
-            <Route path="/services/advisory" element={<ServicePage title="Advisory Services" description="Strategic business growth advisory." />} />
-            <Route path="/services/advisory/strategic" element={<ServicePage title="Strategic Advisory" description="Global strategic consulting." />} />
-            <Route path="/services/advisory/feasibility" element={<ServicePage title="Business Feasibility Study" description="Determine the viability of your projects." />} />
-            <Route path="/services/advisory/valuation" element={<ServicePage title="Business Valuation" description="Accurate assessment of your company's value." />} />
+            <Route path="/services/advisory" element={<AdvisoryServicesPage />} />
+            <Route path="/services/advisory/feasibility" element={<FeasibilityStudyPage />} />
+            <Route path="/services/advisory/pitch-deck" element={<PitchDeckPage />} />
+            <Route path="/services/advisory/valuation" element={<BusinessValuationPage />} />
+            <Route path="/services/advisory/due-diligence" element={<DueDiligenceReportPage />} />
+            <Route path="/services/advisory/strategic" element={<StrategicPlanningPage />} />
 
             {/* CFO Services */}
-            <Route path="/services/cfo" element={<ServicePage title="CFO Services" description="Outsourced CFO solutions." />} />
-            <Route path="/services/cfo/outsourced" element={<ServicePage title="Outsourced CFO Services" description="Expert financial leadership on demand." />} />
-            <Route path="/services/cfo/budgeting" element={<ServicePage title="Budgeting & Forecasting" description="Plan your financial future with confidence." />} />
-            <Route path="/services/cfo/reporting" element={<ServicePage title="Financial Reporting" description="Transparent and accurate financial reports." />} />
+            <Route path="/services/cfo" element={<CFOServicesPage />} />
+            <Route path="/services/cfo/outsource" element={<OutsourcedAccountingPage />} />
+            <Route path="/services/cfo/budgeting" element={<ServicePage title="Budgeting and Forecasting" description="Plan your financial future with confidence." />} />
+            <Route path="/services/cfo/strategy" element={<CostControlPage />} />
 
             {/* Residency */}
-            <Route path="/services/residency" element={<ServicePage title="UAE Residency" description="Golden Visa and residency assistance." />} />
-            <Route path="/services/residency/golden-visa" element={<ServicePage title="Golden Visa Assistance" description="Long-term residency solutions." />} />
-            <Route path="/services/residency/equivalency" element={<ServicePage title="Equivalency Certificate" description="Credential recognition for visa purposes." />} />
-            <Route path="/services/residency/visa" element={<ServicePage title="Visa Processing Services" description="End-to-end visa support." />} />
+            <Route path="/services/residency" element={<ResidencyPage />} />
+            <Route path="/services/residency/golden-visa" element={<GoldenVisaPage />} />
+            <Route path="/services/residency/equivalency" element={<EquivalencyCertificatePage />} />
+            <Route path="/services/residency/visa" element={<TravelConciergePage />} />
 
             {/* Fallback */}
             <Route path="*" element={<HomePage />} />
           </Routes>
         </main>
+        <MapSection />
         <Footer />
         <WhatsAppButton />
         <ScrollToTop />
