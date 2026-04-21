@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Recipient email (Update this to your email)
-    $recipient = "info@mantraa.ae";
+    $recipient = "avani@mantraa.ae";
     $subject = "New Lead from Mantraa Website: $service";
 
     // Email content
