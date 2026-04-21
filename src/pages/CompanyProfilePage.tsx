@@ -1,8 +1,18 @@
 import PageLayout from '../components/PageLayout';
 import { motion } from 'motion/react';
-import { BookOpen, MapPin, Globe, Compass } from 'lucide-react';
+import { BookOpen, MapPin, Globe, Compass, Download } from 'lucide-react';
 
 export default function CompanyProfilePage() {
+  const downloadProfile = () => {
+    // This assumes the PDF is placed in the public folder
+    const link = document.createElement('a');
+    link.href = '/mantraa-company-profile.pdf';
+    link.download = 'Mantraa_Company_Profile.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <PageLayout 
       title="Company Profile" 
@@ -23,6 +33,16 @@ export default function CompanyProfilePage() {
               Our team brings deep industry insights and personalized service to every project. Let us help you unlock new opportunities and navigate complex challenges with confidence.
             </p>
             
+            <div className="flex flex-col sm:flex-row gap-6 mb-12">
+              <button
+                onClick={downloadProfile}
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-mantraa-red text-white rounded-full font-bold hover:bg-mantraa-navy transition-all shadow-lg group"
+              >
+                <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                Download Full Profile (PDF)
+              </button>
+            </div>
+
             <div className="grid grid-cols-2 gap-6">
               <div className="p-6 bg-mantraa-paper rounded-2xl">
                 <h4 className="text-3xl font-serif font-bold text-mantraa-navy">15+</h4>
