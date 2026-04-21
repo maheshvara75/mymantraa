@@ -73,16 +73,17 @@ export default function Navbar() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute left-0 mt-0 w-64 bg-white shadow-xl rounded-lg overflow-hidden border border-slate-100"
+                      className="absolute left-0 mt-0 w-64 bg-white shadow-xl rounded-lg border border-slate-100"
                     >
                       <div className="py-2">
                         {item.children.map((child) => (
                           <div key={child.label} className="relative group/sub">
                             <Link
                               to={child.href}
-                              className="block px-4 py-2 text-sm text-slate-700 hover:bg-mantraa-paper hover:text-mantraa-navy transition-colors"
+                              className="flex items-center justify-between px-4 py-2 text-sm text-slate-700 hover:bg-mantraa-paper hover:text-mantraa-navy transition-colors"
                             >
                               {child.label}
+                              {child.children && <ChevronDown className="w-4 h-4 -rotate-90 text-slate-400" />}
                             </Link>
                             {child.children && (
                               <div className="hidden group-hover/sub:block absolute left-full top-0 w-64 bg-white shadow-xl rounded-lg border border-slate-100">
@@ -147,13 +148,30 @@ export default function Navbar() {
                   {item.children && (
                     <div className="pl-4 space-y-1">
                       {item.children.map((child) => (
-                        <Link
-                          key={child.label}
-                          to={child.href}
-                          className="block px-3 py-1 text-sm text-slate-500 hover:text-mantraa-navy"
-                        >
-                          {child.label}
-                        </Link>
+                        <div key={child.label}>
+                          <Link
+                            to={child.href}
+                            className={cn(
+                              "block px-3 py-1 text-sm font-medium hover:text-mantraa-navy",
+                              child.children ? "text-slate-700" : "text-slate-500"
+                            )}
+                          >
+                            {child.label}
+                          </Link>
+                          {child.children && (
+                            <div className="pl-4 space-y-1 border-l border-slate-100 ml-3">
+                              {child.children.map((subChild) => (
+                                <Link
+                                  key={subChild.label}
+                                  to={subChild.href}
+                                  className="block px-3 py-1 text-xs text-slate-400 hover:text-mantraa-navy"
+                                >
+                                  {subChild.label}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
                       ))}
                     </div>
                   )}

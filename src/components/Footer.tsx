@@ -36,11 +36,21 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-serif font-bold mb-6">Quick Links</h4>
             <ul className="space-y-4 text-sm text-slate-400">
-              {['About Us', 'Services', 'Resources', 'Contact Us', 'Privacy Policy'].map((item) => (
-                <li key={item}>
-                  <Link to="#" className="hover:text-mantraa-gold transition-colors">{item}</Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/company/about" className="hover:text-mantraa-gold transition-colors">About Us</Link>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-mantraa-gold transition-colors">Services</Link>
+              </li>
+              <li>
+                <Link to="/resources/blog" className="hover:text-mantraa-gold transition-colors">Resources</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-mantraa-gold transition-colors">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="#" className="hover:text-mantraa-gold transition-colors">Privacy Policy</Link>
+              </li>
             </ul>
           </div>
 
@@ -48,17 +58,21 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-serif font-bold mb-6">Our Services</h4>
             <ul className="space-y-4 text-sm text-slate-400">
-              {[
-                'Business Setup',
-                'Bookkeeping & Audit',
-                'VAT Advisory',
-                'Corporate Tax',
-                'CFO Services'
-              ].map((item) => (
-                <li key={item}>
-                  <Link to="#" className="hover:text-mantraa-gold transition-colors">{item}</Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/services/business-setup" className="hover:text-mantraa-gold transition-colors">Business Setup</Link>
+              </li>
+              <li>
+                <Link to="/services/bookkeeping" className="hover:text-mantraa-gold transition-colors">Bookkeeping & Audit</Link>
+              </li>
+              <li>
+                <Link to="/services/vat" className="hover:text-mantraa-gold transition-colors">VAT Advisory</Link>
+              </li>
+              <li>
+                <Link to="/services/corporate-tax" className="hover:text-mantraa-gold transition-colors">Corporate Tax</Link>
+              </li>
+              <li>
+                <Link to="/services/cfo" className="hover:text-mantraa-gold transition-colors">CFO Services</Link>
+              </li>
             </ul>
           </div>
 
@@ -68,15 +82,18 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-slate-400">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-mantraa-red shrink-0" />
-                <span>Business Bay, Dubai, UAE</span>
+                <span>Business Centre, Sharjah Publishing City Free Zone, Sharjah, UAE.</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-mantraa-red shrink-0" />
-                <span>+971 4 XXX XXXX</span>
+                <span>+971 4 325 8784</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-mantraa-red shrink-0" />
-                <span>info@mantraa.ae</span>
+                <span>avani@mantraa.ae</span>
+              </li>
+              <li className="pt-2 text-xs border-t border-white/10 uppercase tracking-widest text-slate-500">
+                Mon – Sat: 9:00AM – 6:00PM
               </li>
             </ul>
           </div>

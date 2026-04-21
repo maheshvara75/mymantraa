@@ -59,7 +59,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-400 uppercase tracking-widest mb-1">Email Us</p>
-                    <p className="text-xl font-medium">info@mantraa.ae</p>
+                    <p className="text-xl font-medium">avani@mantraa.ae</p>
                   </div>
                 </div>
 
@@ -69,7 +69,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-400 uppercase tracking-widest mb-1">Call Us</p>
-                    <p className="text-xl font-medium">+971 4 XXX XXXX</p>
+                    <p className="text-xl font-medium">+971 4 325 8784</p>
                   </div>
                 </div>
 
@@ -79,7 +79,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-slate-400 uppercase tracking-widest mb-1">Our Office</p>
-                    <p className="text-xl font-medium">Business Bay, Dubai, UAE</p>
+                    <p className="text-xl font-medium">Business Centre, Sharjah Publishing City Free Zone, Sharjah, UAE.</p>
                   </div>
                 </div>
               </div>
